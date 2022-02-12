@@ -35,29 +35,18 @@ public class MyListAdapter extends ArrayAdapter<Hero> {
     @Override
     public View getView(final int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
-
         LayoutInflater layoutInflater = LayoutInflater.from(context);
 
         View view = layoutInflater.inflate(resource, null, false);
 
-        ImageView imageView = view.findViewById(R.id.imageView);
-        TextView textViewName = view.findViewById(R.id.textViewName);
-        TextView textViewTeam = view.findViewById(R.id.textViewTeam);
-        Button buttonDelete = view.findViewById(R.id.buttonDelete);
+        ImageView imageView = view.findViewById(R.id.img);
+        TextView textViewName = view.findViewById(R.id.name);
+
 
         Hero hero = heroList.get(position);
 
         imageView.setImageDrawable(context.getResources().getDrawable(hero.getImage()));
         textViewName.setText(hero.getName());
-        textViewTeam.setText(hero.getTeam());
-
-        buttonDelete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                removeHero(position);
-            }
-        });
 
         return view;
     }

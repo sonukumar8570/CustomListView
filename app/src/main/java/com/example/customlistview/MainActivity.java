@@ -22,12 +22,11 @@ public class MainActivity extends AppCompatActivity {
         heroList = new ArrayList<>();
         listView = (ListView) findViewById(R.id.listView);
 
-        heroList.add(new Hero(R.drawable.photo1, "Spiderman", "Avengers"));
-        heroList.add(new Hero(R.drawable.photo1, "Joker", "Injustice Gang"));
-        heroList.add(new Hero(R.drawable.photo1, "Iron Man", "Avengers"));
-        heroList.add(new Hero(R.drawable.photo1, "Doctor Strange", "Avengers"));
-        heroList.add(new Hero(R.drawable.photo1, "Captain America", "Avengers"));
-        heroList.add(new Hero(R.drawable.photo1, "Batman", "Justice League"));
+        heroList.add(new Hero(R.drawable.facebook, "Facebook", "Avengers"));
+        heroList.add(new Hero(R.drawable.youtube, "Youtube", "Injustice Gang"));
+        heroList.add(new Hero(R.drawable.whatapp, "Whatapp", "Avengers"));
+        heroList.add(new Hero(R.drawable.twitter, "Twitter", "Avengers"));
+        heroList.add(new Hero(R.drawable.insta, "Instagram", "Avengers"));
 
 
 
